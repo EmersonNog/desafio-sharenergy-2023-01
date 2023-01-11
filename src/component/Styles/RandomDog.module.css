@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer{
+  width: 100%;
+}
+
+.container > button{
+  margin: 10px;
+  width: 100px;
+  height: 20px;
+  background-color: #222;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.container > button:hover{
+  color: #ffbb33;
+}
+
+.container > img{
+  width: 340px;
+  height: 353px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+@media (max-width: 600px) {
+  .container > button {
+    margin-top: 40px;
+  }
+  .container > img {
+    margin-top: 50px;
+  }
+
+  .footer{
+    margin-top: 120px;
+    width: 100%;
+  }
+}

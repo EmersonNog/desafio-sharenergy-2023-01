@@ -1,0 +1,65 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App label{
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ffbb33;
+  margin-bottom: 10px;
+  background-color: #222;
+  text-align: center;
+  padding: 5px;
+}
+
+img{
+  width: 520px;
+  padding: 10px;
+}
+
+.App{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerInput{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+  margin-bottom: 133px;
+  background-color: #222;
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.containerInput input {
+  border: none;
+  padding: 5px;
+  background-color: #222;
+  border-bottom: 1px solid rgb(169, 169, 169);
+  border-radius: 5px;
+  color: white;
+}
+
+.ImgCat{
+  width: 400px;
+}
+
+@media (max-width: 600px) {
+  .containerInput{
+    margin-bottom: 245px;
+    width: 250px;
+    height: 200px;
+  }
+
+  .ImgCat{
+    width: 300px;
+    margin-bottom: 40px;
+  }
+}

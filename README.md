@@ -1,92 +1,177 @@
-# Desafio para o processo seletivo SHARENERGY 2023/01
+<h1>📢 Desafio Sharenergy 2023-01 📢</h1>
 
-Repositório destinado aos interessados em participar do processo seletivo da SHARENERGY 2023/01. As vagas são voltadas para desenvolvimento de aplicações Web e Mobile.
+## ⚡ Features ⚡
 
-## Sobre a SHARENERGY
+- [x] Login Page 
+- [x] Autenticação com username/senha
+- [x] API Random User Generator
+- [x] API HTTP Cat - Status Code
+- [x] API Random Dog
+- [x] CRUD
 
-No ramo da produção de energia fotovoltaica, há a modalidade de produção compartilhada. Nessa modalidade, diferentes pessoas investem na construção de uma mesma usina fotovoltaica e dividem o retorno finaceiro referente à energia gerada pela usina.
+---
 
-Acreditamos que as energias renováveis terão um lugar dominante em nossa economia pelo resto de nossas vidas. Trabalhamos no sentido de ampliar o impacto positivo que as energias renováveis podem ter no meio ambiente e nas nossas vidas. O sucesso da SHARENERGY é resultado de nossa equipe apaixonada, juntamente com nosso compromisso de oferecer a melhor solução.
+## 🎥 Link do video de explicação
+```
+https://www.youtube.com/watch?v=4gEVw467DkM
+```
 
-Sabemos que negócios enfrentam desafios únicos e por isso oferecemos soluções turnkey, customizadas, economicamente viáveis e seguras.
+---
 
-A Startup figura entre as top 10 EnergyTechs do ranking 100 Open Startups desde 2018. Prova de que a inovação está enraizada em nossa cultura. Somos uma startup em estágio de crescimento e você trabalhará diretamente com os fundadores, ajudando a definir a visão, o produto e a experiência do usuário.
+<br/>
 
-<p align="left">
-  <a href="https://www.linkedin.com/company/sharenergy-brasil/">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn Button">
-  </a>
-  <a href="https://sharenergy.com.br/">
-    <img src="https://img.shields.io/badge/-Website-red" alt="Sharenergy Website Button">
-  </a>
-</p>
+## 🤔 Como iniciar o sistema?
+<p>💡 Aqui está as instruções de como iniciar o projeto</p>
 
-## Sobre a vaga
+<br/>
 
-Já pensou em potencializar o setor que mais cresce na galáxia e trabalhar com uma solução que utiliza tecnologia web de ponta, altamente distribuída com foco em performance e disponibilidade? 👀
+```bash
+# Clonando o repositório
+$ git clone <https://github.com/EmersonNog/desafio-sharenergy-2023-01/tree/emerson-nogueira-dos-santos>
 
-Os desenvolvedores da Sharenergy são responsáveis por criar e manter aplicações para clientes internos e externos, prover soluções escaláveis, resilientes e altamente disponíveis que sustentem picos de acesso além de atuar como referência técnica e tutores de outros desenvolvedores.
+# Entrando na pasta raiz do projeto
+$ cd DesafioDev
 
-Procuramos por pessoas dinâmicas e que queiram estar aprendendo sempre. Nossa equipe é jovem, motivada e estamos sempre em busca de soluções criativas para alcançar os resultados que nossos clientes esperam. Se você tem esse perfil, é autoconfiante, autodidata e tem facilidade para lidar com desafios diários, essa vaga é para você!
+# Instalando as dependências do arquivo package.json
+$ yarn install
+```
+<br/>
 
-# O Desafio
+### 🎲 Rodando o Back-end na porta:3000
+```bash
+$ yarn dev
+```
 
-Construir uma aplicação web (frontend e backend) capaz de realizar a comunicação com APIs distintas, além de um CRUD.
+### 🎲 Rodando o Front-end na porta:3001
+```bash
+$ yarn start
+```
 
-## Aplicação
+---
+</br>
 
-- A página inicial da aplicação deve ser uma `Login Page`;
-- O usuário deve ser capaz de se autenticar utilizando o username `desafiosharenergy` e password `sh@r3n3rgy`, também, deve existir a possibilidade do usuário utilizar o `remember me` para realizar logins automáticos, sem a necessidade de digitar username e password após o primeiro acesso;
-- Após o Login, a página principal deve conter uma listagem de usuários gerada a partir da api [Random User Generator](https://randomuser.me/), a lista deve conter a foto do usuário, nome completo, email, username e idade. Além disso, os requests devem ser páginados, porém, é de critério do participante do desafio a quantidade de resultados a serem exibidos por página e variações para o mesmo. Também, deve haver uma search para buscar usuários por nome, email ou username;
-- Em uma segunda página, o usuário deve ser capaz de selecionar um status code http qualquer, e, após a seleção, deve ser retornada uma imagem da api [HTTP Cat](https://http.cat/) relacionada ao status escolhido, caso não exista tal imagem, deve ser retornada uma imagem de not found à critério de escolha do participante do desafio;
-- Em uma terceira página, deve haver um botão de refresh que, ao ser clicado, deve retornar uma imagem aleatória da api [Random Dog](https://random.dog/);
-- Em uma quarta página, deve haver uma lista de clientes, através da qual o usuário deve ser capaz de cadastrar novos clientes, visualizar informações de um cliente específico, atualizar um cliente e deletar clientes. O cadastro deve possuir nome, email, telefone, endereço e cpf.
+# 🕵🏻 Aplicação
 
-### Requisitos da aplicação e de código
+## 🔒 Login de acesso
 
-- Interface amigável, bonita e limpa
-- Responsividade
-- Clean Code
+```
+Username: desafiosharenergy
+Password: sh@r3n3rgy
+```
 
-### Ferramentas e Stack a ser utilizado
+## 🔀 Tela Users Random
 
-- ReactJS para o frontend
-- NodeJS (com ou sem frameworks) ou Golang para o backend
-- MongoDB
-- TypeScript
-- HTML e CSS
+```
+Será gerado uma página com 10 usuários, nessa
+tela tera a paginificação e busca de usuário por 
+genêro e nacionalidade.
+```
 
-### Aprimoramentos adicionais da aplicação (opcional)
+## 🐈 Tela Http Cat
+```
+Ao digitar um status code relativo a um codigo HTTP,
+será renderizada uma imagem de um gato com o status
+code, se não tiver, retorna um 404 not found.
+```
 
-A aplicação criada para o desafio pode ser aprimorada com recursos pensados por você. A seguir, foram listadas algumas sugestões do que poderia ser feito:
+## 🐕 Tela Random Dog
+```
+Sempre o botão de refresh for clicado será 
+renderizado uma imagem/gif de um cachorrinho
+aleatório.
+```
 
-- Testes
-- Documentação
+## 📋 CRUD
+```
+Nessa parte da aplicação terá duas áreas, lado esquerdo 
+para cadastrar e na parte direita será onde ficada as box
+com os dados de cada registro. Sendo assim possivel,
+adicionar, visualizar, editar e deletar os registros.
+```
 
-### Mas, afinal, quais ferramentas a Sharenergy utiliza?
+---
+</br>
 
-* [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) e [Typescript](https://www.typescriptlang.org/)
-* Front-end: [ReactJS](https://reactjs.org/) e [React Native](https://reactnative.dev/)
-* Back-end: [Node.js](https://nodejs.org/en/), [NestJS](https://nestjs.com/) e [Go](https://golang.org/)
-* Banco de dados: [MongoDB](https://www.mongodb.com/) do lado do servidor e [Minimongo](https://guide.meteor.com/collections.html) do lado do cliente (cache)
-* Gerenciamento de Containers: [Docker](https://www.docker.com/)
-* Gerenciamento de Repositórios: [NX](https://nx.dev/)
-* UI: [Tailwind CSS](https://tailwindcss.com/) e [Material-UI V4](https://v4.mui.com/)
-* Sistema Operacional (principal): [Linux](https://www.linux.org/), também sendo possível utilizar o [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/) (WSL)
+## 👨‍💻 Tecnologias utilizadas
+<br/>
 
-## O que devo entregar?
+🛠️ As seguintes ferramentas foram usadas na construção do projeto:
 
-Esperamos de você duas entregas: o código no GitHub e um vídeo explicativo no YouTube.
+- [ReactJS](https://pt-br.reactjs.org/)
+- [NodeJS](https://nodejs.org/en/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Express](https://expressjs.com/pt-br/)
+- [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/)
+- [Nodemon](https://nodemon.io/)
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
-### Instruções
+---
 
-- Faça um fork desse repositório.
-- Em seguida, crie uma branch, cujo nome é o seu nome completo, no seguinte formato: meu-nome-completo.
-- Resolva o desafio realizando versionamento local e remoto. Fique à vontade em criar outras branches durante o desenvolvimento do código.
-- Inclua no README.md uma breve instrução de instalação e de execução da aplicação criada.
-- Faça um vídeo que explique o que você fez no desafio, com duração aproximada de 5 minutos. A facecam é opcional, mas bem-vinda. O vídeo deve ser postado no YouTube (pode deixar como não listado) e seu link deve ser colocado no README.md.
-- Ao finalizar o desafio, faça um pull request de sua branch para esse repositório.
+<br/>
+<br/>
 
-### Prazo limite de entrega
+## 🏛️ Arquitetura do Projeto
 
-O pull request com sua solução do desafio deve ser feito até a data especificada no corpo do email que você recebeu com a descrição do desafio.
+<br/>
+
+```markdown
+src/
+  ├── assets/
+  │     ├── logo.png
+  │     └── simbolEnergy.jpg
+  │
+  ├── component/
+  │     ├── Form/
+  │     │    ├── Button.js
+  │     │    ├── Button.module.css
+  │     │    ├── Input.js
+  │     │    ├── Input.module.css
+  │     │    └── Lista.js
+  │     ├── Layouts/
+  │     │    ├── Footer.js 
+  │     │    ├── Footer.module.css
+  │     │    ├── Navbar.js
+  │     │    └── Navbar.module.css
+  │     ├── Pages/
+  │     │    ├── Cadastro.js
+  │     │    ├── Cadastro.module.css
+  │     │    ├── HttpCat.js
+  │     │    ├── HttpCat.module.css
+  │     │    ├── Login.js
+  │     │    ├── Login.module.css
+  │     │    ├── RandomDog.js
+  │     │    ├── RandomDog.module.css
+  │     │    ├── UserGenerator.js
+  │     │    └── UserGenerator.module.css
+  │     ├── Services/
+  │     │    └── api.js 
+  │     │
+  │     └── Styles/
+  │          ├── Button.module.css
+  │          ├── Cadastro.module.css
+  │          ├── Footer.module.css
+  │          ├── HttpCat.module.css
+  │          ├── Input.module.css
+  │          ├── Login.module.css
+  │          ├── Navbar.module.css
+  │          ├── RandomDog.module.css
+  │          └── UserGenerator.module.css
+  │
+  ├── config/
+  │     └── dbConfig.js
+  │     
+  ├── controllers/
+  │     └── DadosController.js
+  │     
+  ├── models/
+  │      └── Dados.js
+  │
+  ├── App.js
+  ├── index.js
+  ├── routes.js
+  └── server.js
+```
+
+Made by Emerson N. Santos 👨🏼‍💻 - [LinkedIn](https://www.linkedin.com/in/noggueira)

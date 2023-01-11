@@ -1,0 +1,19 @@
+.input_block label{
+    color: #acacac;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin: 10px;
+}
+
+.input_block input{
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-bottom: 1px solid #eee;
+    background-color: transparent;
+    margin-left: 15px;
+}
